@@ -1,0 +1,17 @@
+@media only screen and (max-width: 980px){
+    article {
+        margin: auto;
+        width:80%;
+        text-align: center;
+    }
+    main{
+        margin: auto;
+        width:80%;
+        text-align: center;
+    }
+    main img {
+        margin: auto;
+        width:100%;
+        text-align: center;
+    }
+}

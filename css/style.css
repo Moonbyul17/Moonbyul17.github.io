@@ -1,0 +1,66 @@
+body{
+    background: rgb(43, 41, 41);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+}
+
+body h2{
+    font-size: 50px;
+    text-shadow: 2px 2px 4px black;
+}
+
+article{
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+article h3{
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+}
+
+article p{
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+main{
+    font-size: 20px;
+}
+
+header{
+    font-size: 20px;
+}
+
+aside h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+aside p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-link{
+    font-size: 20px;
+}
+
+.accordion-body {
+    font-size: 20px;
+}
+
+.accordion-button {
+    font-size: 25px;
+    font-weight: bold;
+}
