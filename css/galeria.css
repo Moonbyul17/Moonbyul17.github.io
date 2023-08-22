@@ -9,10 +9,8 @@
 }
 
 .galeria__item{
-	width: 300px;
+	width: 500px;
 	margin: 10px;
-	
-	
 }
 
 .galeria__img{
@@ -23,7 +21,7 @@
 }
 
 .galeria__img:hover{
-	box-shadow: 7px 7px 12px 0px rgba(127,127,127,0.8);
+	box-shadow: 7px 7px 12px 0px rgba(197, 105, 209, 0.8);
 	cursor: pointer;
 }
 .galeria h2 {

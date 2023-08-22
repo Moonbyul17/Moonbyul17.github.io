@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="flexsliderpersonal.css" type="text/css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/galeria.css">
-    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/skils.css">
+    <link rel="stylesheet" href="css/boton.css">
 
     </head>
 
@@ -49,21 +49,29 @@
             </div>
         </nav>
 
-        <!-- Carousel de Flexslider -->
-        <div class="flexslider mt-5">
-            <ul class="slides">
-            <li>
-                <img src="img/banner1.jpg" />
-            </li>
-            <li>
-                <img src="img/banner2.jpg" />
-            </li>
-            <li>
-                <img src="img/banner3.jpg" />
-            </li>
-            </ul>
+        <!-- Carousel de Bootstrap -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="img/banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/banner2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/banner3.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
         </div>
-
+        
 
     <header>
         <br>
@@ -72,6 +80,12 @@
             <p class="text-center">Hola! Me llamo Ana María Puicón Eyzaguirre, tengo 20 años y actualmente estudio en el instituto IDAT, estudio computación e informática y curso el IV ciclo.  Soy amante de la tecnología y me apasiona la inteligencia artificial. <br> ¿Algún dia llegarán a dominar el mundo?</p>
             <img src="img/yo.jpg" alt="" width="450px" class="d-block m-auto" style="max-width: 100%;">
         </div>
+
+        <!-- Botón de Subir -->
+    <button onclick="scrollToTop()" id="btnScrollToTop" title="Subir">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+    
         
     </header>
     <main>
@@ -203,6 +217,12 @@
                 </a>	
             </div>
 
+            <div class="galeria__item">
+                <a href="proyectos/Proyecto_Final/index.html" target="_blank">
+                <img src="galeria/final.jpg" class="galeria__img">
+                </a>	
+            </div>
+
     </div>
 
     <div class="container">
@@ -261,8 +281,6 @@
 
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="jquery.flexslider.js"></script>
 
     <script>
         $("body, html").hide().fadeIn(1000);
@@ -279,60 +297,49 @@
         sr.reveal('.navbar-nav', {
             duration: 2000,
             origin: "left",
-            distance: "500px"
+            distance: "100px"
         });
 
         sr.reveal('#sobre', {
             duration: 2000,
             origin: "left",
-            distance: "600px"
+            distance: "100px"
         });
         sr.reveal('#hobbys', {
             duration: 2000,
             origin: "right",
-            distance: "600px"
+            distance: "100px"
         });
 
         sr.reveal('#skils', {
             duration: 2000,
             origin: "bottom",
-            distance: "600px"
+            distance: "100px"
         });
         sr.reveal('#estudios', {
             duration: 2000,
             origin: "bottom",
-            distance: "600px"
+            distance: "100px"
         });
         sr.reveal('#hobbys', {
             duration: 2000,
             origin: "right",
-            distance: "600px"
+            distance: "100px"
         });
         sr.reveal('#proyectos', {
             duration: 2000,
             origin: "left",
-            distance: "600px"
+            distance: "100px"
         });
         sr.reveal('#galeria', {
             duration: 2000,
             origin: "left",
-            distance: "600px"
+            distance: "100px"
         });
         sr.reveal('#accordionFlushExample', {
-            duration: 2000,
+            duration: 1000,
             origin: "bottom",
-            distance: "600px"
-        });
-    </script>
-
-    <script type="text/javascript" charset="utf-8">
-        $(window).load(function() {
-            $('.flexslider').flexslider({
-                pauseOnAction: true,
-                pauseOnHover: false,
-                touch: true,
-                slideshowSpeed: 5000
-            });
+            distance: "100px"
         });
     </script>
 
